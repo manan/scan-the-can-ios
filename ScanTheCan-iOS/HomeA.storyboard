@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CA7-XG-03C">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeA Controller-->
+        <scene sceneID="rOK-xI-8jh">
+            <objects>
+                <viewController id="CA7-XG-03C" customClass="HomeAController" customModule="ScanTheCan_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ncS-QO-MAU"/>
+                        <viewControllerLayoutGuide type="bottom" id="kCC-6O-n2V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iUR-d6-dRl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HaW-Hd-0eA">
+                                <rect key="frame" x="0.0" y="20" width="320" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="Amv-h3-14k"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7a-h3-aXs">
+                                <rect key="frame" x="0.0" y="517" width="320" height="51"/>
+                                <color key="backgroundColor" red="0.80392156862745101" green="0.0" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Cnb-kf-GpK"/>
+                                </constraints>
+                                <state key="normal" title="View Receipts">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onViewResultsPressed:" destination="CA7-XG-03C" eventType="touchUpInside" id="c0d-RW-5Ij"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vS5-3W-0Nq">
+                                <rect key="frame" x="16" y="184" width="288" height="265"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="M7a-h3-aXs" firstAttribute="top" secondItem="vS5-3W-0Nq" secondAttribute="bottom" constant="68" id="A5o-1h-0H2"/>
+                            <constraint firstItem="vS5-3W-0Nq" firstAttribute="centerX" secondItem="M7a-h3-aXs" secondAttribute="centerX" id="GrW-Yy-Yqi"/>
+                            <constraint firstItem="HaW-Hd-0eA" firstAttribute="leading" secondItem="iUR-d6-dRl" secondAttribute="leading" id="VXe-6G-Uja"/>
+                            <constraint firstItem="HaW-Hd-0eA" firstAttribute="leading" secondItem="M7a-h3-aXs" secondAttribute="leading" id="bDK-EV-WOz"/>
+                            <constraint firstItem="vS5-3W-0Nq" firstAttribute="leading" secondItem="iUR-d6-dRl" secondAttribute="leadingMargin" id="foC-vZ-YRx"/>
+                            <constraint firstItem="vS5-3W-0Nq" firstAttribute="top" secondItem="HaW-Hd-0eA" secondAttribute="bottom" constant="55" id="gxT-ak-hdd"/>
+                            <constraint firstItem="HaW-Hd-0eA" firstAttribute="trailing" secondItem="M7a-h3-aXs" secondAttribute="trailing" id="k96-bU-vF8"/>
+                            <constraint firstItem="HaW-Hd-0eA" firstAttribute="top" secondItem="ncS-QO-MAU" secondAttribute="bottom" id="pRd-tr-fRW"/>
+                            <constraint firstItem="M7a-h3-aXs" firstAttribute="bottom" secondItem="kCC-6O-n2V" secondAttribute="top" id="qxF-1L-bll"/>
+                            <constraint firstAttribute="trailing" secondItem="HaW-Hd-0eA" secondAttribute="trailing" id="w3T-rD-pEm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="QRCodeImageView" destination="vS5-3W-0Nq" id="iOo-qi-6ZG"/>
+                        <outlet property="logoView" destination="HaW-Hd-0eA" id="dRR-NV-bxj"/>
+                        <outlet property="viewReceiptsButton" destination="M7a-h3-aXs" id="3cf-8T-3Cu"/>
+                        <segue destination="azl-bM-xoQ" kind="show" identifier="allreceipts" id="9fZ-4e-k9V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="itT-Iy-cTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31.875" y="-94.014084507042256"/>
+        </scene>
+        <!--AllReceipt-->
+        <scene sceneID="PVh-KV-z1U">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AllReceipt" id="azl-bM-xoQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wx8-hQ-CJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="351"/>
+        </scene>
+    </scenes>
+</document>

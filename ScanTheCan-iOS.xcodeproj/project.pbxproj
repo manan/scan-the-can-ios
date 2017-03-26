@@ -7,21 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		359F2086A9A4D2D401017022 /* Pods_ScanTheCan_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30625D72C2816B05A4DFF9B5 /* Pods_ScanTheCan_iOS.framework */; };
 		DA2E95381E87934200F41DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E95371E87934200F41DD4 /* AppDelegate.swift */; };
-		DA2E953A1E87934200F41DD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E95391E87934200F41DD4 /* ViewController.swift */; };
-		DA2E953D1E87934200F41DD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2E953B1E87934200F41DD4 /* Main.storyboard */; };
 		DA2E953F1E87934200F41DD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2E953E1E87934200F41DD4 /* Assets.xcassets */; };
-		DA2E95421E87934200F41DD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2E95401E87934200F41DD4 /* LaunchScreen.storyboard */; };
+		DAA690DD1E88263A005799A2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA690DC1E88263A005799A2 /* DetailViewController.swift */; };
+		DAA690DF1E882658005799A2 /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA690DE1E882658005799A2 /* DetailView.storyboard */; };
+		DAC12C2B1E87E10900F5F83A /* FinalStepReceipt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC12C2A1E87E10900F5F83A /* FinalStepReceipt.storyboard */; };
+		DAC12C2D1E87E16C00F5F83A /* FinalStepReceiptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC12C2C1E87E16C00F5F83A /* FinalStepReceiptController.swift */; };
+		DAC12C2F1E8814A600F5F83A /* AllReceiptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC12C2E1E8814A600F5F83A /* AllReceiptController.swift */; };
+		DAC12C311E8814BA00F5F83A /* AllReceipt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC12C301E8814B900F5F83A /* AllReceipt.storyboard */; };
+		DAF1ED7B1E8798A50008E0AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF1ED6C1E8798A50008E0AD /* User.swift */; };
+		DAF1ED7D1E8798A50008E0AD /* UserProfileSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF1ED6E1E8798A50008E0AD /* UserProfileSelf.swift */; };
+		DAF1ED7E1E8798A50008E0AD /* CompanyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF1ED6F1E8798A50008E0AD /* CompanyProfile.swift */; };
+		DAF1ED7F1E8798A50008E0AD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF1ED701E8798A50008E0AD /* Utilities.swift */; };
+		DAF1ED801E8798A50008E0AD /* HomeAController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF1ED711E8798A50008E0AD /* HomeAController.swift */; };
+		DAF1ED811E8798A50008E0AD /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF1ED721E8798A50008E0AD /* SignUpController.swift */; };
+		DAF1ED821E8798A50008E0AD /* SignUpAController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF1ED731E8798A50008E0AD /* SignUpAController.swift */; };
+		DAF1ED831E8798A50008E0AD /* LoginAController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF1ED741E8798A50008E0AD /* LoginAController.swift */; };
+		DAF1ED841E8798A50008E0AD /* HomeA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF1ED751E8798A50008E0AD /* HomeA.storyboard */; };
+		DAF1ED851E8798A50008E0AD /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF1ED761E8798A50008E0AD /* SignUp.storyboard */; };
+		DAF1ED861E8798A50008E0AD /* SignUpA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF1ED771E8798A50008E0AD /* SignUpA.storyboard */; };
+		DAF1ED871E8798A50008E0AD /* LoginA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF1ED781E8798A50008E0AD /* LoginA.storyboard */; };
+		DAF1ED8D1E87AB0A0008E0AD /* Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF1ED8C1E87AB0A0008E0AD /* Copy.swift */; };
+		DAF1ED8F1E87AD970008E0AD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF1ED8E1E87AD970008E0AD /* Product.swift */; };
+		DAF1ED911E87AF960008E0AD /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF1ED901E87AF960008E0AD /* Receipt.swift */; };
+		DAF1ED931E87B5E90008E0AD /* LoginB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF1ED921E87B5E90008E0AD /* LoginB.storyboard */; };
+		DAF1ED951E87B5FB0008E0AD /* LoginBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF1ED941E87B5FB0008E0AD /* LoginBController.swift */; };
+		DAF1ED971E87B8DA0008E0AD /* HomeB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF1ED961E87B8DA0008E0AD /* HomeB.storyboard */; };
+		DAF1ED991E87BC3E0008E0AD /* HomeBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF1ED981E87BC3E0008E0AD /* HomeBController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30625D72C2816B05A4DFF9B5 /* Pods_ScanTheCan_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanTheCan_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DA2534949F315BB1B2756E8 /* Pods-ScanTheCan-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanTheCan-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScanTheCan-iOS/Pods-ScanTheCan-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		DA2E95341E87934200F41DD4 /* ScanTheCan-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ScanTheCan-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2E95371E87934200F41DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA2E95391E87934200F41DD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DA2E953C1E87934200F41DD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA2E953E1E87934200F41DD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DA2E95411E87934200F41DD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA2E95431E87934200F41DD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA690DC1E88263A005799A2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DAA690DE1E882658005799A2 /* DetailView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
+		DAC12C2A1E87E10900F5F83A /* FinalStepReceipt.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FinalStepReceipt.storyboard; sourceTree = "<group>"; };
+		DAC12C2C1E87E16C00F5F83A /* FinalStepReceiptController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalStepReceiptController.swift; sourceTree = "<group>"; };
+		DAC12C2E1E8814A600F5F83A /* AllReceiptController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllReceiptController.swift; sourceTree = "<group>"; };
+		DAC12C301E8814B900F5F83A /* AllReceipt.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AllReceipt.storyboard; sourceTree = "<group>"; };
+		DAF1ED6C1E8798A50008E0AD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DAF1ED6E1E8798A50008E0AD /* UserProfileSelf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileSelf.swift; sourceTree = "<group>"; };
+		DAF1ED6F1E8798A50008E0AD /* CompanyProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyProfile.swift; sourceTree = "<group>"; };
+		DAF1ED701E8798A50008E0AD /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		DAF1ED711E8798A50008E0AD /* HomeAController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAController.swift; sourceTree = "<group>"; };
+		DAF1ED721E8798A50008E0AD /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		DAF1ED731E8798A50008E0AD /* SignUpAController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpAController.swift; sourceTree = "<group>"; };
+		DAF1ED741E8798A50008E0AD /* LoginAController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAController.swift; sourceTree = "<group>"; };
+		DAF1ED751E8798A50008E0AD /* HomeA.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeA.storyboard; sourceTree = "<group>"; };
+		DAF1ED761E8798A50008E0AD /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		DAF1ED771E8798A50008E0AD /* SignUpA.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUpA.storyboard; sourceTree = "<group>"; };
+		DAF1ED781E8798A50008E0AD /* LoginA.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginA.storyboard; sourceTree = "<group>"; };
+		DAF1ED8C1E87AB0A0008E0AD /* Copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Copy.swift; sourceTree = "<group>"; };
+		DAF1ED8E1E87AD970008E0AD /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		DAF1ED901E87AF960008E0AD /* Receipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		DAF1ED921E87B5E90008E0AD /* LoginB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginB.storyboard; sourceTree = "<group>"; };
+		DAF1ED941E87B5FB0008E0AD /* LoginBController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginBController.swift; sourceTree = "<group>"; };
+		DAF1ED961E87B8DA0008E0AD /* HomeB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeB.storyboard; sourceTree = "<group>"; };
+		DAF1ED981E87BC3E0008E0AD /* HomeBController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBController.swift; sourceTree = "<group>"; };
+		E4BF0E8F9C0361710D2C0CCA /* Pods-ScanTheCan-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanTheCan-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScanTheCan-iOS/Pods-ScanTheCan-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +77,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359F2086A9A4D2D401017022 /* Pods_ScanTheCan_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		150BF1E73C0630C43E20243C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4BF0E8F9C0361710D2C0CCA /* Pods-ScanTheCan-iOS.debug.xcconfig */,
+				3DA2534949F315BB1B2756E8 /* Pods-ScanTheCan-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DA2E952B1E87934200F41DD4 = {
 			isa = PBXGroup;
 			children = (
 				DA2E95361E87934200F41DD4 /* ScanTheCan-iOS */,
 				DA2E95351E87934200F41DD4 /* Products */,
+				150BF1E73C0630C43E20243C /* Pods */,
+				FA1CDCDF3955D44C7804BAC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +114,68 @@
 		DA2E95361E87934200F41DD4 /* ScanTheCan-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				DA2E95371E87934200F41DD4 /* AppDelegate.swift */,
-				DA2E95391E87934200F41DD4 /* ViewController.swift */,
-				DA2E953B1E87934200F41DD4 /* Main.storyboard */,
 				DA2E953E1E87934200F41DD4 /* Assets.xcassets */,
-				DA2E95401E87934200F41DD4 /* LaunchScreen.storyboard */,
+				DA2E95371E87934200F41DD4 /* AppDelegate.swift */,
 				DA2E95431E87934200F41DD4 /* Info.plist */,
+				DAF1ED891E8798B40008E0AD /* Models */,
+				DAF1ED8A1E8798C70008E0AD /* Controllers */,
+				DAF1ED8B1E8798E40008E0AD /* Storyboards */,
 			);
 			path = "ScanTheCan-iOS";
+			sourceTree = "<group>";
+		};
+		DAF1ED891E8798B40008E0AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAF1ED8C1E87AB0A0008E0AD /* Copy.swift */,
+				DAF1ED8E1E87AD970008E0AD /* Product.swift */,
+				DAF1ED901E87AF960008E0AD /* Receipt.swift */,
+				DAF1ED6C1E8798A50008E0AD /* User.swift */,
+				DAF1ED6E1E8798A50008E0AD /* UserProfileSelf.swift */,
+				DAF1ED6F1E8798A50008E0AD /* CompanyProfile.swift */,
+				DAF1ED701E8798A50008E0AD /* Utilities.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DAF1ED8A1E8798C70008E0AD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAA690DC1E88263A005799A2 /* DetailViewController.swift */,
+				DAC12C2E1E8814A600F5F83A /* AllReceiptController.swift */,
+				DAF1ED711E8798A50008E0AD /* HomeAController.swift */,
+				DAC12C2C1E87E16C00F5F83A /* FinalStepReceiptController.swift */,
+				DAF1ED981E87BC3E0008E0AD /* HomeBController.swift */,
+				DAF1ED721E8798A50008E0AD /* SignUpController.swift */,
+				DAF1ED731E8798A50008E0AD /* SignUpAController.swift */,
+				DAF1ED741E8798A50008E0AD /* LoginAController.swift */,
+				DAF1ED941E87B5FB0008E0AD /* LoginBController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DAF1ED8B1E8798E40008E0AD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DAA690DE1E882658005799A2 /* DetailView.storyboard */,
+				DAC12C301E8814B900F5F83A /* AllReceipt.storyboard */,
+				DAF1ED751E8798A50008E0AD /* HomeA.storyboard */,
+				DAC12C2A1E87E10900F5F83A /* FinalStepReceipt.storyboard */,
+				DAF1ED961E87B8DA0008E0AD /* HomeB.storyboard */,
+				DAF1ED761E8798A50008E0AD /* SignUp.storyboard */,
+				DAF1ED771E8798A50008E0AD /* SignUpA.storyboard */,
+				DAF1ED781E8798A50008E0AD /* LoginA.storyboard */,
+				DAF1ED921E87B5E90008E0AD /* LoginB.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA1CDCDF3955D44C7804BAC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30625D72C2816B05A4DFF9B5 /* Pods_ScanTheCan_iOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA2E95461E87934200F41DD4 /* Build configuration list for PBXNativeTarget "ScanTheCan-iOS" */;
 			buildPhases = (
+				7C21CD479F2E6DB775D8C590 /* [CP] Check Pods Manifest.lock */,
 				DA2E95301E87934200F41DD4 /* Sources */,
 				DA2E95311E87934200F41DD4 /* Frameworks */,
 				DA2E95321E87934200F41DD4 /* Resources */,
+				E17AD71DAEEE702E48000159 /* [CP] Embed Pods Frameworks */,
+				99088E5C87C8F4231F99D077 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,44 +241,95 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA2E95421E87934200F41DD4 /* LaunchScreen.storyboard in Resources */,
+				DAF1ED861E8798A50008E0AD /* SignUpA.storyboard in Resources */,
+				DAF1ED871E8798A50008E0AD /* LoginA.storyboard in Resources */,
 				DA2E953F1E87934200F41DD4 /* Assets.xcassets in Resources */,
-				DA2E953D1E87934200F41DD4 /* Main.storyboard in Resources */,
+				DAC12C311E8814BA00F5F83A /* AllReceipt.storyboard in Resources */,
+				DAF1ED841E8798A50008E0AD /* HomeA.storyboard in Resources */,
+				DAC12C2B1E87E10900F5F83A /* FinalStepReceipt.storyboard in Resources */,
+				DAF1ED851E8798A50008E0AD /* SignUp.storyboard in Resources */,
+				DAF1ED931E87B5E90008E0AD /* LoginB.storyboard in Resources */,
+				DAA690DF1E882658005799A2 /* DetailView.storyboard in Resources */,
+				DAF1ED971E87B8DA0008E0AD /* HomeB.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C21CD479F2E6DB775D8C590 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		99088E5C87C8F4231F99D077 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScanTheCan-iOS/Pods-ScanTheCan-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E17AD71DAEEE702E48000159 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScanTheCan-iOS/Pods-ScanTheCan-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA2E95301E87934200F41DD4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA2E953A1E87934200F41DD4 /* ViewController.swift in Sources */,
+				DAF1ED911E87AF960008E0AD /* Receipt.swift in Sources */,
+				DAA690DD1E88263A005799A2 /* DetailViewController.swift in Sources */,
+				DAF1ED7D1E8798A50008E0AD /* UserProfileSelf.swift in Sources */,
+				DAF1ED831E8798A50008E0AD /* LoginAController.swift in Sources */,
+				DAF1ED951E87B5FB0008E0AD /* LoginBController.swift in Sources */,
+				DAF1ED7B1E8798A50008E0AD /* User.swift in Sources */,
+				DAF1ED811E8798A50008E0AD /* SignUpController.swift in Sources */,
+				DAF1ED801E8798A50008E0AD /* HomeAController.swift in Sources */,
+				DAF1ED8F1E87AD970008E0AD /* Product.swift in Sources */,
 				DA2E95381E87934200F41DD4 /* AppDelegate.swift in Sources */,
+				DAF1ED7F1E8798A50008E0AD /* Utilities.swift in Sources */,
+				DAF1ED7E1E8798A50008E0AD /* CompanyProfile.swift in Sources */,
+				DAF1ED991E87BC3E0008E0AD /* HomeBController.swift in Sources */,
+				DAF1ED8D1E87AB0A0008E0AD /* Copy.swift in Sources */,
+				DAC12C2D1E87E16C00F5F83A /* FinalStepReceiptController.swift in Sources */,
+				DAC12C2F1E8814A600F5F83A /* AllReceiptController.swift in Sources */,
+				DAF1ED821E8798A50008E0AD /* SignUpAController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DA2E953B1E87934200F41DD4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA2E953C1E87934200F41DD4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DA2E95401E87934200F41DD4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA2E95411E87934200F41DD4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DA2E95441E87934200F41DD4 /* Debug */ = {
@@ -257,7 +425,9 @@
 		};
 		DA2E95471E87934200F41DD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4BF0E8F9C0361710D2C0CCA /* Pods-ScanTheCan-iOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8PE8S36683;
 				INFOPLIST_FILE = "ScanTheCan-iOS/Info.plist";
@@ -270,7 +440,9 @@
 		};
 		DA2E95481E87934200F41DD4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DA2534949F315BB1B2756E8 /* Pods-ScanTheCan-iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8PE8S36683;
 				INFOPLIST_FILE = "ScanTheCan-iOS/Info.plist";
@@ -300,6 +472,7 @@
 				DA2E95481E87934200F41DD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
